@@ -3,6 +3,7 @@ import StoreProvider from '@/components/StoreProvider';
 
 import './globals.css';
 import { Header } from '@/components/Header';
+import { Navbar } from '@/components/Navbar';
 
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -17,8 +18,9 @@ export default function RootLayout({
     return (
         <html lang="ru">
             <StoreProvider>
-                <body>
+                <body className="mx-auto border border-black max-w-[1200px]">
                     <Header />
+                    <Navbar />
                     {children}
                 </body>
             </StoreProvider>

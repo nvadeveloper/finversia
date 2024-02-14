@@ -3,7 +3,7 @@ import Link from 'next/link';
 export const Header = () => {
     return (
         <header>
-            <div className="p-4 mx-auto border border-black max-w-[1200px] bg-black text-white flex justify-between">
+            <div className="p-4 bg-black text-white flex justify-between">
                 <div>
                     <Link href="/" className="text-3xl font-bold">
                         Finversia
